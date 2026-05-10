@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import * as Icons from "lucide-react";
 import { Link } from "react-router-dom";
@@ -5,9 +6,9 @@ import { services } from "../data";
 import styles from "./Services.module.css";
 
 export const Services = () => {
-    const getIcon = (iconName: string) => {
+    const getIcon = (iconName: string): React.ComponentType<{ size?: number }> => {
         const icon = Icons[iconName as keyof typeof Icons];
-        return icon || Icons.Zap;
+        return (icon as React.ComponentType<{ size?: number }>) || Icons.Zap;
     };
 
     return (
