@@ -1,0 +1,102 @@
+.hero {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(
+        135deg,
+        rgba(91, 47, 255, 0.05) 0%,
+        transparent 100%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+.heroContent {
+    max-width: 700px;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    background: var(--clr-title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ctaButtons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.features {
+    background: var(--clr-bg);
+}
+
+.cta {
+    background: linear-gradient(
+        135deg,
+        var(--primary) 0%,
+        var(--primary-dark) 100%
+    );
+    color: white;
+    padding: 4rem 0;
+    border-radius: 20px;
+    margin: 4rem 0;
+    /* Override title gradient so section-title inherits white inside CTA */
+    --clr-title-gradient: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+}
+
+.cta p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta .btn-primary {
+    background: white;
+    color: var(--primary);
+}
+
+.cta .btn-primary:hover {
+    background: #f0f0f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0 2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+    }
+
+    .ctaButtons .btn {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        gap: 0.5rem;
+    }
+}

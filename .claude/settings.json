@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const icons = require\\('C:/Users/Lenovo/Desktop/ASmedia/node_modules/lucide-react'\\); ['Image','Film','Palette','PenTool','Target','FileText','Megaphone','LayoutDashboard','UserCheck','Tv','TrendingUp'].forEach\\(n => console.log\\(n, !!icons[n]\\)\\)\")",
+      "Bash(ls \"C:/Users/Lenovo/Desktop/ASmedia/public\" 2>/dev/null; ls \"C:/Users/Lenovo/Desktop/ASmedia/src/assets\" 2>/dev/null; ls \"C:/Users/Lenovo/Desktop/\" | grep -i \"logo\\\\|AS\\\\|as_\")",
+      "Read(//c/Users/Lenovo/Desktop/**)",
+      "Bash(ls \"C:/Users/Lenovo/Downloads/\" | grep -i \"logo\\\\|AS\\\\|media\" | head -20)",
+      "Read(//c/Users/Lenovo/Downloads/**)"
+    ]
+  }
+}

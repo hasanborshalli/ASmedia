@@ -1,0 +1,139 @@
+.hero {
+    padding: 4rem 0;
+    background: linear-gradient(
+        135deg,
+        rgba(91, 47, 255, 0.1) 0%,
+        transparent 100%
+    );
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: var(--clr-title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.serviceCard {
+    position: relative;
+    overflow: hidden;
+}
+
+.serviceCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.serviceCard:hover::before {
+    transform: scaleX(1);
+}
+
+.iconWrapper {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.serviceCard:hover .iconWrapper {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.learnMore {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.learnMore:hover {
+    color: var(--primary-dark);
+}
+
+.processSection {
+    background: var(--clr-surface);
+    padding: 4rem 0;
+}
+
+.processSteps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step {
+    position: relative;
+}
+
+.stepNumber {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto 1rem;
+}
+
+.step p {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.step:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -40px;
+    top: 20px;
+    font-size: 2rem;
+    color: var(--primary);
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .step:not(:last-child)::after {
+        content: "↓";
+        right: -5px;
+        top: 65px;
+    }
+
+    .processSteps {
+        grid-template-columns: 1fr;
+    }
+}
