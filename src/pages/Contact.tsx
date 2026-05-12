@@ -67,8 +67,8 @@ export const Contact = () => {
                                     <Mail size={24} />
                                     <div>
                                         <h3>Email</h3>
-                                        <a href="mailto:info@asmedia.com">
-                                            info@asmedia.com
+                                        <a href="mailto:info@abomedia.com">
+                                            info@abomedia.com
                                         </a>
                                     </div>
                                 </div>
@@ -88,9 +88,7 @@ export const Contact = () => {
                                     <div>
                                         <h3>Address</h3>
                                         <p>
-                                            123 Media Street
-                                            <br />
-                                            New York, NY 10001
+                                            Beirut, Downtown
                                         </p>
                                     </div>
                                 </div>

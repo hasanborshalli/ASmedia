@@ -13,7 +13,7 @@ export const Header = () => {
         { path: "/", label: "Home" },
         { path: "/about", label: "About" },
         { path: "/services", label: "Services" },
-        { path: "/clients", label: "Clients" },
+        // { path: "/clients", label: "Clients" },
         { path: "/careers", label: "Careers" },
         { path: "/contact", label: "Contact" },
     ];
@@ -26,7 +26,7 @@ export const Header = () => {
                 <Link to="/" className={styles.logo}>
                     <img
                         src="/logo.png"
-                        alt="ASMEDIA"
+                        alt="ABO MEDIA"
                         className={styles.logoImg}
                     />
                 </Link>

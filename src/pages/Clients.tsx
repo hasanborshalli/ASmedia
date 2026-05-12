@@ -56,19 +56,19 @@ export const Clients = () => {
                     <div className="grid grid-2">
                         {[
                             {
-                                quote: "ASMEDIA transformed our social media presence completely. Their strategy and execution were outstanding.",
+                                quote: "ABO MEDIA transformed our social media presence completely. Their strategy and execution were outstanding.",
                                 author: "CEO, Tech Startup",
                             },
                             {
-                                quote: "Working with ASMEDIA was a game-changer for our brand. Highly professional and results-oriented.",
+                                quote: "Working with ABO MEDIA was a game-changer for our brand. Highly professional and results-oriented.",
                                 author: "Marketing Director, Fashion Brand",
                             },
                             {
-                                quote: "The team at ASMEDIA understands our brand vision and executes flawlessly. Highly recommended!",
+                                quote: "The team at ABO MEDIA understands our brand vision and executes flawlessly. Highly recommended!",
                                 author: "Founder, Fitness Company",
                             },
                             {
-                                quote: "Best decision we made was partnering with ASMEDIA. Our engagement rates have doubled!",
+                                quote: "Best decision we made was partnering with ABO MEDIA. Our engagement rates have doubled!",
                                 author: "Owner, Restaurant Group",
                             },
                         ].map((testimonial, idx) => (

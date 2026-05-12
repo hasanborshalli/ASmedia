@@ -13,7 +13,7 @@ export const About = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        About ASMEDIA
+                        About ABO MEDIA
                     </motion.h1>
                 </div>
             </section>
@@ -29,7 +29,7 @@ export const About = () => {
                     >
                         <h2 className="section-title mb-4">Our Story</h2>
                         <p className={styles.storyText}>
-                            ASMEDIA was founded with a simple yet powerful
+                            ABO MEDIA was founded with a simple yet powerful
                             vision: to help brands tell their stories and
                             connect authentically with their audiences through
                             strategic social media solutions. What started as a

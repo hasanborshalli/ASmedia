@@ -54,7 +54,7 @@ export const Home = () => {
             <section className={`${styles.features} section`}>
                 <div className="container">
                     <h2 className="section-title text-center mb-4">
-                        Why Choose ASMEDIA?
+                        Why Choose ABO MEDIA?
                     </h2>
                     <div className="grid grid-3">
                         {features.map((feature, idx) => (

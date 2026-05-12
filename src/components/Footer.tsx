@@ -14,7 +14,7 @@ export const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.section}>
-                    <h3>ASMEDIA</h3>
+                    <h3>ABO MEDIA</h3>
                     <p>
                         Transforming brands through strategic social media
                         solutions.
@@ -44,8 +44,8 @@ export const Footer = () => {
                     <ul className={styles.contactList}>
                         <li>
                             <Mail size={16} />{" "}
-                            <a href="mailto:info@asmedia.com">
-                                info@asmedia.com
+                            <a href="mailto:info@abomedia.com">
+                                info@abomedia.com
                             </a>
                         </li>
                         <li>
@@ -54,7 +54,7 @@ export const Footer = () => {
                         </li>
                         <li>
                             <MapPin size={16} />{" "}
-                            <span>123 Media Street, NY 10001</span>
+                            <span>Beirut, Downtown</span>
                         </li>
                     </ul>
                 </div>
@@ -101,7 +101,7 @@ export const Footer = () => {
             <div className={styles.divider}></div>
 
             <div className={styles.bottom}>
-                <p>&copy; 2026 ASMEDIA. All rights reserved.</p>
+                <p>&copy; 2026 ABO MEDIA. All rights reserved.</p>
             </div>
         </footer>
     );

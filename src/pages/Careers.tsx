@@ -30,8 +30,9 @@ const EMPTY_FORM: ApplicationForm = {
 };
 
 export const Careers = () => {
-    const [selectedPosition, setSelectedPosition] =
-        useState<Position | null>(null);
+    const [selectedPosition, setSelectedPosition] = useState<Position | null>(
+        null,
+    );
     const [formData, setFormData] = useState<ApplicationForm>(EMPTY_FORM);
     const [submitted, setSubmitted] = useState(false);
 
@@ -61,31 +62,17 @@ export const Careers = () => {
     const positions: Position[] = [
         {
             id: 1,
-            title: "Social Media Manager",
+            title: "Expert Content Creator",
             level: "Mid-Level",
-            location: "Remote",
-            desc: "Manage social media accounts and community engagement for our clients.",
+            location: "Beirut, Downtown",
+            desc: "Produce high-quality, platform-optimized content across social media channels — from short-form video to static visuals and copy.",
         },
         {
             id: 2,
-            title: "Content Creator",
-            level: "Entry-Level",
-            location: "Remote",
-            desc: "Create engaging content for various social media platforms.",
-        },
-        {
-            id: 3,
-            title: "Social Media Strategist",
-            level: "Senior",
-            location: "Hybrid",
-            desc: "Develop comprehensive social media strategies for our clients.",
-        },
-        {
-            id: 4,
-            title: "Analytics Specialist",
+            title: "Professional Account Manager",
             level: "Mid-Level",
-            location: "Remote",
-            desc: "Analyze campaign performance and provide data-driven insights.",
+            location: "Beirut, Downtown",
+            desc: "Own client relationships and oversee day-to-day social media operations, ensuring consistent brand presence and peak performance.",
         },
     ];
 
@@ -141,7 +128,7 @@ export const Careers = () => {
                 `Cover Letter:\n${formData.coverLetter}`,
         );
 
-        window.location.href = `mailto:careers@asmedia.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:careers@abomedia.com?subject=${subject}&body=${body}`;
         setSubmitted(true);
         setTimeout(closeModal, 2500);
     };
@@ -177,7 +164,7 @@ export const Careers = () => {
             <section className="section">
                 <div className="container">
                     <h2 className="section-title text-center mb-4">
-                        Why Join ASMEDIA?
+                        Why Join ABO MEDIA?
                     </h2>
                     <div className="grid grid-4">
                         {benefits.map((benefit, idx) => (
@@ -262,7 +249,7 @@ export const Careers = () => {
                         Send us your resume and let's talk about opportunities!
                     </p>
                     <motion.a
-                        href="mailto:careers@asmedia.com"
+                        href="mailto:careers@abomedia.com"
                         className="btn btn-primary"
                         whileHover={{ scale: 1.05 }}
                     >
@@ -315,8 +302,8 @@ export const Careers = () => {
                                     initial={{ opacity: 0, y: -10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                 >
-                                    ✓ Your email client is opening — please
-                                    send the pre-filled message to complete your
+                                    ✓ Your email client is opening — please send
+                                    the pre-filled message to complete your
                                     application!
                                 </motion.div>
                             ) : (
@@ -419,7 +406,7 @@ export const Careers = () => {
                                             name="coverLetter"
                                             value={formData.coverLetter}
                                             onChange={handleChange}
-                                            placeholder="Tell us why you're a great fit for this role and what excites you about joining ASMEDIA…"
+                                            placeholder="Tell us why you're a great fit for this role and what excites you about joining ABO MEDIA…"
                                             rows={5}
                                             required
                                         />
